@@ -38,3 +38,22 @@ sistema específico como react o django. Puede crear una aplicación compleja de
 una sola pagina con bonitos gráficos si quiere, pero no va a mejorar la
 probabilidad de pasar. Hemos recibido tareas que han pasado nuestros filtors que
 contienen poco menos de 30 líneas de python.
+
+# Solución del proyecto
+
+## Pasos para ejecutar la solución planteada
+### 1. Clonar el repositorio
+```bash
+git clone https://github.com/waseidel/prueba_mach_eight.git
+```
+
+### 2. Instalar las dependencias
+```bash
+cd prueba_mach_eight
+pip install -r requirements
+```
+
+### 3. Ejecutar jupyter notebook
+```bash
+jupyter notebook
+```
