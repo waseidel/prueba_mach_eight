@@ -46,14 +46,38 @@ contienen poco menos de 30 líneas de python.
 ```bash
 git clone https://github.com/waseidel/prueba_mach_eight.git
 ```
+![Git clone](img/git-clone.png)
 
 ### 2. Instalar las dependencias
 ```bash
 cd prueba_mach_eight
+python -m venv env
+source env/bin/activate
 pip install -r requirements
 ```
+
+En caso de no tener instalado virtualenv para ejecutar ```venv``` se debe instalar usando ```pip install virtualenv```
+
+En windows el reemplazar el comando ```source env/bin/activate``` por ```.\env\Scripts\activate```
+
+![Instalar dependencias](img/instalacion-dependencias.png)
 
 ### 3. Ejecutar jupyter notebook
 ```bash
 jupyter notebook
 ```
+![Lanzar jupyter notebook](img/launch-jupyter-notebook.png)
+
+Esto abre automaticamente el navegador con el notebook, de no ser así copiar la url que se indica en la parte inferior ```http://localhost:8888/?token=XXXXX```
+
+Se visualiza lo siguiente
+![Jupyter Notebook](img/jupyter-notebook.png)
+
+Se debe entrar en la carpeta src y ejecutar el archivo main.ipynb
+![Jupyter src](img/previsualizacion-jupyter.png)
+
+Ya se puede empezar a ejecutar el notebook y en la celda 8 digitar la suma de alturas que se espera
+![Jupyter digitar altura](img/digitar-la-altura.png)
+
+En la última celda se visualiza un dataframe con la respuesta esperada
+![Jupyter respuesta esperada](img/respuesta-esperada.png)
